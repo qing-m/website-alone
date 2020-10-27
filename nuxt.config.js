@@ -18,6 +18,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    './plugins/axios.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -40,5 +41,15 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+  },
+
+  server: {
+    port: 8888,
+    host: '0.0.0.0'
+  },
+
+  // 环境变量
+  env: {
+    baseUrl: process.env.NODE_ENV === 'production' ? 'http://www.alone.chat' : 'http://127.0.0.1:8888'
   }
 }

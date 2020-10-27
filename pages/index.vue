@@ -4,6 +4,8 @@
       <Logo />
       <h1 class="title">
         website-alone
+        {{ project }}
+        {{ env }}
       </h1>
       <div class="links">
         <a
@@ -28,7 +30,19 @@
 </template>
 
 <script>
-export default {}
+export default {
+  asyncData ({ context }) {
+    return {
+      project: 'nuxt',
+      env: process.env.baseUrl
+    }
+  },
+  data () {
+    return {
+      project: 'default'
+    }
+  }
+}
 </script>
 
 <style>
