@@ -4,27 +4,11 @@
       <Logo />
       <h1 class="title">
         website-alone
-        {{ project }}
-        {{ env }}
       </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <p>{{ project }}</p>
+      <p>{{ env }}</p>
+      <p> {{ name }}</p>
+      <p>{{ path }}</p>
     </div>
   </div>
 </template>
@@ -39,7 +23,9 @@ export default {
   },
   data () {
     return {
-      project: 'default'
+      project: 'default',
+      name: this.$route.name,
+      path: this.$route.path
     }
   }
 }

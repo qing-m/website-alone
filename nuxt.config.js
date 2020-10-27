@@ -48,6 +48,17 @@ export default {
     host: '0.0.0.0'
   },
 
+  router: {
+    extendRoutes (routes, reslove) {
+      routes.push({
+        path: '/',
+        redirect: {
+          name: 'user'
+        }
+      })
+    }
+  },
+
   // 环境变量
   env: {
     baseUrl: process.env.NODE_ENV === 'production' ? 'http://www.alone.chat' : 'http://127.0.0.1:8888'
