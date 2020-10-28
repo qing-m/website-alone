@@ -1,5 +1,9 @@
 <template>
   <div class="container">
+    <el-button>Hello el</el-button>
+    <nuxt-link to="/button">
+      Button
+    </nuxt-link>
     <div>
       <Logo />
       <h1 class="title">
@@ -33,12 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-  margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {

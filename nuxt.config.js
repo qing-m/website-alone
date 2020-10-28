@@ -18,13 +18,15 @@ export default {
   ],
   styleResources: {
     scss: [
-      './assets/scss/variable.scss'
+      './assets/scss/variable.scss',
+      './assets/scss/element-variables.scss'
     ]
   },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    './plugins/axios.js'
+    '~/plugins/axios',
+    '~/plugins/elementUI'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -69,5 +71,8 @@ export default {
   // 环境变量
   env: {
     baseUrl: process.env.NODE_ENV === 'production' ? 'http://www.alone.chat' : 'http://127.0.0.1:8888'
-  }
+  },
+
+  // 防止打包多次
+  vendor:['element-ui']
 }
