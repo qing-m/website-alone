@@ -74,5 +74,5 @@ export default {
   },
 
   // 防止打包多次
-  vendor:['element-ui']
+  vendor: ['element-ui']
 }
