@@ -14,7 +14,8 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '~/assets/scss/index.scss'
+    '~/assets/scss/index.scss',
+    '~/assets/scss/transition.scss'
   ],
   styleResources: {
     scss: [
