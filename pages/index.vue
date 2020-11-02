@@ -1,72 +1,99 @@
 <template>
-  <div class="container">
-    <el-button>Hello el</el-button>
-    <nuxt-link to="/button">
-      Button
-    </nuxt-link>
-    <div>
-      <Logo />
-      <h1 class="title">
-        website-alone
-      </h1>
-      <p>{{ project }}</p>
-      <p>{{ env }}</p>
-      <p> {{ name }}</p>
-      <p>{{ path }}</p>
+  <div class="index-wrapper">
+    <div ref="reveal" class="reveal">
+      sword art online
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  asyncData ({ context }) {
-    return {
-      project: 'nuxt',
-      env: process.env.baseUrl
-    }
-  },
-  data () {
-    return {
-      project: 'default',
-      name: this.$route.name,
-      path: this.$route.path
-    }
+  mounted () {
+    // const duration = 0.8
+    const delay = 0.3
+    const revealText = this.$refs.reveal
+    const letters = revealText.textContent.split('')
+    revealText.textContent = ''
+    const middle = letters.filter(e => e !== ' ').length / 2
+    letters.forEach((letter, i) => {
+      const span = document.createElement('span')
+      span.textContent = letter
+      span.style.animationDelay = `${delay + Math.abs(i - middle) * 0.1}s`
+      revealText.append(span)
+    })
   }
 }
 </script>
 
 <style lang="scss" scoped>
-.container {
-  min-height: 100vh;
+.index-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #333333;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.reveal {
+  position: relative;
+  display: flex;
+  color: #FFFFFF;
+  font-size: 1em;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  white-space: pre;
+  span {
+    opacity: 0;
+    transform: scale(0);
+    animation: fadeIn 2.4s forwards;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  &::before {
+    left: 50%;
+    animation: slideLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+  }
+
+  &::after {
+    right: 50%;
+    animation: slideRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: $theme;
-  letter-spacing: 1px;
+@keyframes slideLeft {
+  to {
+    left: -6%;
+    opacity: 1;
+    transform: scale(0.9);
+  }
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+@keyframes slideRight {
+  to {
+    right: -6%;
+    opacity: 1;
+    transform: scale(0.9);
+  }
 }
 </style>
