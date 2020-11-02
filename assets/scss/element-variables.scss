@@ -5,5 +5,4 @@ $--color-primary: $theme;
 /* 改变 icon 字体路径变量，必需 */
 $--font-path: '~element-ui/lib/theme-chalk/fonts';
 
-/* 组件样式按需引入 */
 @import "~element-ui/packages/theme-chalk/src/button";
