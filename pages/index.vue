@@ -1,46 +1,283 @@
 <template>
   <div class="index-wrapper">
-    <div class="narrative">
-      <anSelfcard />
-    </div>
-    <div class="anhartbtn">
-      <anHartbtn content="Click Me" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="snow" />
+    <div class="btn-wrapper">
+      <nuxt-link to="Introduction">
+        <anFlashbtn content="Click Me" />
+      </nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
-import anSelfcard from '@/components/animate/anSelfcard'
-import anHartbtn from '@/components/animate/anHartbtn'
+import anFlashbtn from '@/components/animate/anFlashbtn'
 export default {
   name: 'Index',
   components: {
-    anSelfcard,
-    anHartbtn
+    anFlashbtn
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }to {
-    opacity: 1;
-  }
-}
 .index-wrapper {
-  width: 100%;
   height: 100vh;
-  overflow: hidden;
+  // background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   background-color: #333333;
-  .narrative {
-    padding: 200px 0 0 300px;
-  }
-  .anhartbtn {
-    opacity: 0;
-    padding-left: 280px;
-    animation: fadeIn 3s 13s forwards;
+  overflow: hidden;
+  filter: drop-shadow(0 0 10px white);
+  .btn-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
+@function random_range($min, $max) {
+  $rand: random();
+  $random_range: $min + floor($rand * (($max - $min) + 1));
+  @return $random_range;
+}
+
+.snow {
+  $total: 200;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+
+  @for $i from 1 through $total {
+    $random-x: random(1000000) * 0.0001vw;
+    $random-offset: random_range(-100000, 100000) * 0.0001vw;
+    $random-x-end: $random-x + $random-offset;
+    $random-x-end-yoyo: $random-x + ($random-offset / 2);
+    $random-yoyo-time: random_range(30000, 80000) / 100000;
+    $random-yoyo-y: $random-yoyo-time * 100vh;
+    $random-scale: random(10000) * 0.0001;
+    $fall-duration: random_range(10, 30) * 1s;
+    $fall-delay: random(30) * -1s;
+
+    &:nth-child(#{$i}) {
+      opacity: random(10000) * 0.0001;
+      transform: translate($random-x, -10px) scale($random-scale);
+      animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+    }
+
+    @keyframes fall-#{$i} {
+      #{percentage($random-yoyo-time)} {
+        transform: translate($random-x-end, $random-yoyo-y) scale($random-scale);
+      }
+
+      to {
+        transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
+      }
+    }
+  }
+}
+
 </style>
