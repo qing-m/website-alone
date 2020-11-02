@@ -20,8 +20,7 @@ export default {
 
 <style lang="scss" scoped>
 .reveal-component {
-  width: 100%;
-  height: 100%;
+  display: inline-block;
   .reveal {
     color: #FFFFFF;
   }
