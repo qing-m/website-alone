@@ -1,11 +1,23 @@
 <template>
   <div>
     <div class="header">
-      <h1 class="title slide-bar">
-        I'm Alone
-      </h1>
-      <p class="subtitle slide-bar">
-        A CSS Wizard
+      <p class="english slide-bar delay1">
+        Hi,Baby
+      </p>
+      <p class="translation slide-bar delay2">
+        你好，宝贝
+      </p>
+      <p class="english slide-bar delay3">
+        I was very happy to celebrate my first birthday with you
+      </p>
+      <p class="translation slide-bar delay4">
+        第一次和你过生日，我感觉很开心
+      </p>
+      <p class="english slide-bar delay5">
+        I hope you like it
+      </p>
+      <p class="translation slide-bar delay6">
+        希望你喜欢
       </p>
     </div>
   </div>
@@ -21,9 +33,9 @@
     content: "";
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    background: #35b9f1;
+    background: #FFFFFF;
     transform: scaleX(0);
     transform-origin: left;
     animation: slide-in-out 2s cubic-bezier(0.75, 0, 0, 1) forwards;
@@ -47,33 +59,62 @@
     color: white;
   }
 }
-.header {
-  .title,
-  .subtitle {
-    width: 250px;
-    height: 30px;
+.english{
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-family: Lato, sans-serif;
+  height: 100%;
+  text-align: justify;
+  &::before {
+    background: #FFFFFF;
   }
-  .title {
-    margin: 0;
-    font-size: 32px;
-    line-height: 30px;
-    &::before {
-      background: #FF4081;
-    }
+}
+.translation{
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: Lato, sans-serif;
+  height: 100%;
+  &::before {
+    background: #FFFFFF;
   }
-  .subtitle {
-    margin: 10px 0 0 0;
-    font-family: Lato, sans-serif;
-    font-size: 12px;
-    line-height: 30px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    animation-delay: 3.2s;
-
-    &::before {
-      background: #03A9F4;
-      animation-delay: 2s;
-    }
+}
+.delay1 {
+  width: 250px;
+  animation-delay: 2s;
+  &::before {
+    animation-delay: 1.5s;
+  }
+}
+.delay2 {
+  width: 250px;
+  animation-delay: 4.5s;
+  &::before {
+    animation-delay: 4s;
+  }
+}
+.delay3 {
+  animation-delay: 6.5s;
+  &::before {
+    animation-delay: 6s;
+  }
+}
+.delay4 {
+  animation-delay: 8.5s;
+  &::before {
+    animation-delay: 8s;
+  }
+}
+.delay5 {
+  animation-delay: 10.5s;
+  &::before {
+    animation-delay: 10s;
+  }
+}
+.delay6 {
+  width: 250px;
+  animation-delay: 12.5s;
+  &::before {
+    animation-delay: 12s;
   }
 }
 </style>
