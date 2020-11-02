@@ -1,26 +1,15 @@
 <template>
   <div class="index-wrapper">
-    <div ref="reveal" class="reveal">
-      sword art online
-    </div>
+    <revealText reveal-text="你好,欢迎来到我的网站" />
   </div>
 </template>
 
 <script>
+import revealText from '@/components/animate/revealText'
 export default {
-  mounted () {
-    // const duration = 0.8
-    const delay = 0.3
-    const revealText = this.$refs.reveal
-    const letters = revealText.textContent.split('')
-    revealText.textContent = ''
-    const middle = letters.filter(e => e !== ' ').length / 2
-    letters.forEach((letter, i) => {
-      const span = document.createElement('span')
-      span.textContent = letter
-      span.style.animationDelay = `${delay + Math.abs(i - middle) * 0.1}s`
-      revealText.append(span)
-    })
+  name: 'Index',
+  components: {
+    revealText
   }
 }
 </script>
@@ -29,71 +18,7 @@ export default {
 .index-wrapper {
   width: 100%;
   height: 100vh;
-  background: #333333;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.reveal {
-  position: relative;
-  display: flex;
-  color: #FFFFFF;
-  font-size: 1em;
-  font-family: Raleway, sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  white-space: pre;
-  span {
-    opacity: 0;
-    transform: scale(0);
-    animation: fadeIn 2.4s forwards;
-  }
-
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    height: 100%;
-    background: white;
-    opacity: 0;
-    transform: scale(0);
-  }
-
-  &::before {
-    left: 50%;
-    animation: slideLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
-  }
-
-  &::after {
-    right: 50%;
-    animation: slideRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
-  }
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-@keyframes slideLeft {
-  to {
-    left: -6%;
-    opacity: 1;
-    transform: scale(0.9);
-  }
-}
-
-@keyframes slideRight {
-  to {
-    right: -6%;
-    opacity: 1;
-    transform: scale(0.9);
-  }
+  background-color: #333333;
 }
 </style>
