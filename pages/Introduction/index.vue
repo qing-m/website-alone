@@ -4,7 +4,9 @@
       <anSelfcard />
     </div>
     <div class="anhartbtn">
-      <anHartbtn content="Click Me" />
+      <nuxt-link to="/HappyBirthday">
+        <anHartbtn content="Click Me" />
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -13,7 +15,7 @@
 import anSelfcard from '@/components/animate/anSelfcard'
 import anHartbtn from '@/components/animate/anHartbtn'
 export default {
-  name: 'Index',
+  name: 'Introduction',
   components: {
     anSelfcard,
     anHartbtn

@@ -2,22 +2,22 @@
   <div>
     <div class="header">
       <p class="english slide-bar delay1">
-        Hi,Baby
+        Hi,宝贝,你看到这里说明我不在
       </p>
       <p class="translation slide-bar delay2">
-        你好，宝贝
+        人家是去拿蛋糕了 嘤嘤嘤QAQ
       </p>
       <p class="english slide-bar delay3">
-        I was very happy to celebrate my first birthday with you
+        请你站在心型花瓣上面
       </p>
       <p class="translation slide-bar delay4">
-        第一次和你过生日，我感觉很开心
+        当心脚下，小寿星
       </p>
       <p class="english slide-bar delay5">
-        I hope you like it
+        10秒之后我将出现
       </p>
       <p class="translation slide-bar delay6">
-        希望你喜欢
+        不要忘记点下面的按钮!!
       </p>
     </div>
   </div>
@@ -79,14 +79,14 @@
   }
 }
 .delay1 {
-  width: 250px;
+  width: 600px;
   animation-delay: 2s;
   &::before {
     animation-delay: 1.5s;
   }
 }
 .delay2 {
-  width: 250px;
+  width: 400px;
   animation-delay: 4.5s;
   &::before {
     animation-delay: 4s;
@@ -111,7 +111,7 @@
   }
 }
 .delay6 {
-  width: 250px;
+  width: 400px;
   animation-delay: 12.5s;
   &::before {
     animation-delay: 12s;
