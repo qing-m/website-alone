@@ -4,17 +4,17 @@
     <div class="main-wrapper">
       <Nuxt />
     </div>
-    <div class="footer-wrapper">
-      2
-    </div>
+    <footerBar />
   </div>
 </template>
 
 <script>
 import navBar from './navBar/index'
+import footerBar from './footer/index'
 export default {
   components: {
-    navBar
+    navBar,
+    footerBar
   }
 }
 </script>
@@ -23,7 +23,7 @@ export default {
 .layout-wrapper {
   width: 100%;
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
   background-color: #FFFFFF;
   .main-wrapper {
@@ -34,11 +34,6 @@ export default {
       width: 0;
       display: none;
     }
-  }
-  .footer-wrapper {
-    width: 100%;
-    height: 38px;
-    background-color: rgb(138, 135, 134);
   }
 }
 </style>

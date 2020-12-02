@@ -1,26 +1,5 @@
 <template>
-  <div class="home-wrapper app-home">
-    <p>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</p>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-    <h1>Hello Vue Nuxt!!!!!!!!!!!!!!!!!!!s</h1>
-  </div>
+  <div class="home-wrapper" />
 </template>
 
 <script>

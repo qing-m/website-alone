@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div>
     <p>页面错误</p>
     <nuxt-link to="/">
@@ -6,3 +6,9 @@
     </nuxt-link>
   </div>
 </template>
+
+<script>
+export default {
+  layout: ''
+}
+</script>
