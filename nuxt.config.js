@@ -14,8 +14,7 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '~/assets/scss/index.scss',
-    '~/assets/scss/transition.scss'
+    '~/assets/scss/index.scss'
   ],
   styleResources: {
     scss: [
@@ -54,7 +53,7 @@ export default {
   },
 
   server: {
-    port: 8888,
+    port: 8999,
     host: '0.0.0.0'
   },
 
@@ -63,7 +62,7 @@ export default {
       routes.push({
         path: '/',
         redirect: {
-          name: 'user'
+          name: 'home'
         }
       })
     }
