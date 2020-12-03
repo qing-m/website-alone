@@ -2,9 +2,14 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: '元气肥宅妙妙屋 | Alone',
+    titleTemplate: '%s | Alone',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { 'http-equiv': 'cleartype', content: 'on' },
+      { 'http-equiv': 'Cache-Control' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
+      { hid: 'keywords', name: 'keywords', content: '前端，JavaScript，博客，Node，Vue' },
+      { name: 'author', content: 'admin@Alone' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
@@ -16,12 +21,6 @@ export default {
   css: [
     '~/assets/scss/index.scss'
   ],
-  styleResources: {
-    scss: [
-      './assets/scss/variable.scss',
-      './assets/scss/element-variables.scss'
-    ]
-  },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
