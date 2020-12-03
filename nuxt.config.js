@@ -52,7 +52,7 @@ export default {
   },
 
   server: {
-    port: 8991,
+    port: 8999,
     host: '0.0.0.0'
   },
 
