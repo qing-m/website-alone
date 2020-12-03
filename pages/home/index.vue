@@ -59,8 +59,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/scss/mixin.scss';
+@import '@/assets/scss/_themes.scss';
+@import '@/assets/scss/_handle.scss';
 .home-wrapper {
   @include container;
+  @include font_color('color-info');
   user-select: none;
   -webkit-user-select: none;
 }
