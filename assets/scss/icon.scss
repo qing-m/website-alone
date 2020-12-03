@@ -7,10 +7,12 @@
   url('../fonts/iconfont.svg?t=1606965640799#iconfont') format('svg'); /* iOS 4.1- */
 }
 
-.icon {
+[class^="icon-"], [class*=" icon-"] {
   font-family: "icon" !important;
-  font-size: 16px;
   font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

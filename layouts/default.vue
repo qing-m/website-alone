@@ -20,20 +20,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.layout-wrapper {
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  position: relative;
-  background-color: #FFFFFF;
-  .main-wrapper {
-    width: 100%;
-    height: calc(100vh - 76px);
-    overflow: auto;
-    &::-webkit-scrollbar {
-      width: 0;
-      display: none;
-    }
-  }
-}
+
 </style>
