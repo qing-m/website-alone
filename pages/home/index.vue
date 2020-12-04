@@ -39,10 +39,12 @@
 </template>
 
 <script>
+// import { getUserInfo } from '@/services/api/home'
 export default {
   name: 'HomePage',
   async fetch () {
     // 请求数据
+    // await getUserInfo()
   },
   data () {
     return {

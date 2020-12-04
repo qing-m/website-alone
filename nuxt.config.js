@@ -21,6 +21,7 @@ export default {
   css: [
     '~/assets/scss/index.scss'
   ],
+  dev: process.env.NODE_ENV !== 'production',
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
@@ -69,7 +70,7 @@ export default {
 
   // 环境变量
   env: {
-    baseUrl: process.env.NODE_ENV === 'production' ? 'http://www.alone.chat' : 'http://127.0.0.1:8888'
+    baseUrl: process.env.NODE_ENV === 'production' ? 'http://www.alone.chat' : 'http://127.0.0.1:8999'
   },
 
   // 防止打包多次
