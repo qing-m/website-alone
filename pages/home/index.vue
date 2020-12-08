@@ -1,5 +1,5 @@
 <template>
-  <div class="home-wrapper">
+  <div class="home-container">
     <i class="icon-cry" />
     <i class="icon-smile" />
     <i class="icon-mimaxianshi" />
@@ -42,6 +42,7 @@
 // import { getUserInfo } from '@/services/api/home'
 export default {
   name: 'HomePage',
+  transition: 'search-slide',
   async fetch () {
     // 请求数据
     // await getUserInfo()
@@ -63,7 +64,8 @@ export default {
 @import '@/assets/scss/mixin.scss';
 @import '@/assets/scss/_themes.scss';
 @import '@/assets/scss/_handle.scss';
-.home-wrapper {
+@import '@/assets/scss/animation.scss';
+.home-container {
   @include container;
   @include font_color('color-info');
   user-select: none;

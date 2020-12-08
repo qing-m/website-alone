@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="about-container">
     <h1>Hello About</h1>
     <router-link to="/home">
       Go Home
@@ -17,3 +17,16 @@ export default {
   transitions: 'search-slide'
 }
 </script>
+
+<style lang="scss" scoped>
+@import '@/assets/scss/mixin.scss';
+@import '@/assets/scss/_themes.scss';
+@import '@/assets/scss/_handle.scss';
+@import '@/assets/scss/animation.scss';
+.about-container {
+  @include container;
+  @include font_color('color-info');
+  user-select: none;
+  -webkit-user-select: none;
+}
+</style>
