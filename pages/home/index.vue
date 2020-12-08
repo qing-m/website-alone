@@ -11,6 +11,8 @@
       222222222222222
       {{ title }}
     </el-button>
+    <svg-icon class="icon" icon-class="robotAva" />
+    <svg-icon class="icon" icon-class="Rockstar" />
     <a href="#">Hellllllllll</a>
     <p>
       前几天很多人在讨论一个消息。
@@ -71,5 +73,10 @@ export default {
   @include font_color('color-info');
   user-select: none;
   -webkit-user-select: none;
+}
+.icon {
+  width: 100px;
+  height: 100px;
+  color: #FFFFFF;
 }
 </style>

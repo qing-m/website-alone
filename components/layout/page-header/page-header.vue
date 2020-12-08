@@ -1,9 +1,7 @@
 <template>
   <div class="page-header-container">
     <div class="page-header-content-nav">
-      <div class="logo-container">
-        <svg-icon class="icon" icon-class="Rockstar" />
-      </div>
+      <svg-icon class="icon" icon-class="Rockstar" />
       <ul class="nav-bar-container">
         <nuxt-link to="/home" tag="li">
           Home
@@ -40,11 +38,13 @@ export default {
     display: -webkit-box;
     display: flex;
     align-items: center;
-    background-color: rgb(255, 255, 255);
-    .logo-container {
+    background-color: iconrgb(255, 255, 255);
+    .icon {
       width: 60px;
       height: 30px;
       margin-right: 20px;
+      border: none;
+      color: white;
     }
     .nav-bar-container {
       display: flex;
