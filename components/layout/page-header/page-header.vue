@@ -11,6 +11,9 @@
         <nuxt-link to="/about" tag="li">
           About
         </nuxt-link>
+        <nuxt-link to="/views" tag="li">
+          Views
+        </nuxt-link>
       </ul>
     </div>
   </div>
