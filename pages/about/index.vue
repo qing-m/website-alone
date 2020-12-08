@@ -13,8 +13,8 @@ export default {
     return {
       title: 'About'
     }
-  },
-  transitions: 'search-slide'
+  }
+  // transitions: 'search-slide'
 }
 </script>
 

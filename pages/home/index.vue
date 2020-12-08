@@ -42,7 +42,7 @@
 // import { getUserInfo } from '@/services/api/home'
 export default {
   name: 'HomePage',
-  transition: 'search-slide',
+  // transition: 'search-slide',
   async fetch () {
     // 请求数据
     // await getUserInfo()
