@@ -1,6 +1,9 @@
 <template>
   <div class="page-header-container">
     <div class="page-header-content-nav">
+      <div class="logo-container">
+        <svg-icon class="icon" icon-class="logo" />
+      </div>
       <p>11111111111</p>
     </div>
   </div>
@@ -23,7 +26,11 @@ export default {
   .page-header-content-nav {
     @include container;
     height: 100%;
-    background-color: sandybrown;
+    background-color: #FFFFFF;
+    .logo-container {
+      width: 100px;
+      height: 45px;
+    }
   }
 }
 </style>
