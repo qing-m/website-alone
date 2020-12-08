@@ -37,7 +37,7 @@ export default {
       title: 'Views'
     }
   },
-  layout: '',
+  layout: 'main',
   middleware: '',
   scrollToTop: '',
   transitions: '',
