@@ -11,7 +11,7 @@
       222222222222222
       {{ title }}
     </el-button>
-    <a href="#">111111111111111111111111111111</a>
+    <a href="#">Hellllllllll</a>
     <p>
       前几天很多人在讨论一个消息。
 
@@ -42,7 +42,8 @@
 // import { getUserInfo } from '@/services/api/home'
 export default {
   name: 'HomePage',
-  // transition: 'search-slide',
+  transition: 'search-slide',
+  middleware: 'theme',
   async fetch () {
     // 请求数据
     // await getUserInfo()

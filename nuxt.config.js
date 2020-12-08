@@ -73,6 +73,7 @@ export default {
   },
 
   router: {
+    middleware: 'theme',
     extendRoutes (routes, reslove) {
       routes.push({
         path: '/',

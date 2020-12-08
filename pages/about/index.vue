@@ -9,12 +9,13 @@
 
 <script>
 export default {
+  middleware: 'theme',
+  transitions: 'search-slide',
   head () {
     return {
       title: 'About'
     }
   }
-  // transitions: 'search-slide'
 }
 </script>
 
