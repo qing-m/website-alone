@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="page-nav-header">
     <header class="page-header-container">
       <div class="page-header-inner">
-        <nuxt-link class="logo-link-container" to="/home">
+        <nuxt-link class="logo-link-container" to="/home" tag="div">
           <svg-icon class="icon" icon-class="logo" />
         </nuxt-link>
         <ul role="navigation" class="tabs page-header-tabs">
@@ -14,12 +14,14 @@
             tag="li"
             :to="item.href"
           >
-            <!-- tabs-link','page-header-tabsLink',{false:" isActive}] -->
             <p :class="{'tabs-link': true, 'page-header-tabsLink': true, 'isActive': item.href === fullPath }">
               {{ item.name }}
             </p>
           </nuxt-link>
         </ul>
+        <div class="page-header-user-info">
+          <div class="user-info-avatar" />
+        </div>
       </div>
     </header>
   </div>
@@ -52,7 +54,7 @@ export default {
   background-clip: content-box;
   position: relative;
   z-index: 1000;
-  min-width: 1000px;
+  min-width: 1200px;
   overflow: hidden;
   box-sizing: border-box;
   display: block;
@@ -61,14 +63,13 @@ export default {
     position: relative;
     display: flex;
     align-items: center;
-    width: 1000px;
+    max-width: 1200px;
     height: 52px;
-    padding: 0 16px;
     margin: 0 auto;
     -webkit-box-align: center;
     .logo-link-container {
       @include displayCenter;
-      width: 64px;
+      width: 34px;
       height: 34px;
       .icon {
         width: 64px;
@@ -113,6 +114,18 @@ export default {
         .page-header-tabsLink:hover,.isActive:hover {
           @include font_color('hover-color-primary');
         }
+      }
+    }
+    .page-header-user-info {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      flex: 1;
+      text-align: right;
+      .user-info-avatar {
+        width: 30px;
+        height: 30px;
+        background-color: turquoise;
       }
     }
   }
