@@ -93,3 +93,9 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin LargestConatiner {
+  width: 1000px;
+  padding: 10px 16px;
+  margin: 0 auto;
+}

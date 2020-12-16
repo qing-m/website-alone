@@ -1,5 +1,5 @@
 <template>
-  <div class="page-nav-header">
+  <div>
     <header class="page-header-container">
       <div class="page-header-inner">
         <nuxt-link class="logo-link-container" to="/home" tag="div">
@@ -86,7 +86,7 @@ export default {
   background-clip: content-box;
   position: relative;
   z-index: 1000;
-  min-width: 1200px;
+  min-width: 1000px;
   overflow: hidden;
   box-sizing: border-box;
   display: block;
@@ -95,7 +95,7 @@ export default {
     position: relative;
     display: flex;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1000px;
     height: 52px;
     margin: 0 auto;
     -webkit-box-align: center;
@@ -157,14 +157,10 @@ export default {
         display: flex;
       }
       &.AppHeader-Search-isFocus {
-        .SearchBar-button {
-          display: none;
-        }
         .SearchBar-tool {
-          width: 100%;
-          .SearchBar-input {
-            transition: width .2s ease, background .3s ease;
-            width: 100%;
+          .Input-wrapper {
+            background-color: #FFFFFF !important;
+            border-color: #8590a6 !important;
           }
         }
       }
@@ -178,7 +174,7 @@ export default {
           box-sizing: border-box;
           padding-left: 12px;
           padding-right: 0;
-          width: 260px;
+          width: 265px;
           .el-input {
             width: auto;
             position:relative;
@@ -225,7 +221,7 @@ export default {
         }
       }
       .SearchBar-button {
-        margin-left: 16px;
+        margin-left: 10px;
         padding: 0 14px;
         line-height: 30px;
       }

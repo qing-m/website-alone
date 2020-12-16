@@ -54,5 +54,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.app-container {
+  background-color: #f6f6f6;
+  position: relative;
+}
 </style>
