@@ -13,6 +13,7 @@
         </nuxt-link>
       </nav>
     </div>
+    <ThumbnailContainer />
 
     <div id="TopstoryContent" class="Topstory-content">
       <div class="ListShortcut">
@@ -49,10 +50,14 @@
 
 <script>
 // import { getUserInfo } from '@/services/api/home'
+import ThumbnailContainer from '@/components/artice/ThumbnailContainer'
 export default {
   name: 'HomePage',
   transition: 'search-slide',
   middleware: 'theme',
+  components: {
+    ThumbnailContainer
+  },
   async fetch () {
     // 请求数据
     // await getUserInfo()
