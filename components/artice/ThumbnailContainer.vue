@@ -4,8 +4,8 @@
       <p>如何看待网传「何炅收受上快本艺人粉丝集资购买的奢侈品礼物」一事？这一现象在行业内是普遍的吗？</p>
     </div>
     <div class="ArticeIntroduction">
-      <img src="https://pic1.zhimg.com/v2-35a9c63aa989005dac6bb31f7c137d1b_400x224.jpg?source=382ee89a">
-      <p>草莓味儿的波妞： 有人说一看赵露思就是从小衣食无忧的富家千金。 据悉赵露思父亲是一位企业家，身价不菲。 有资源、有人脉，甚至还找到汪涵，把女儿带上综艺节目。所以赵露思演艺道路除了长相圈粉，演技被认可，背后少</p>
+      <img width="190" src="https://pic1.zhimg.com/v2-35a9c63aa989005dac6bb31f7c137d1b_400x224.jpg?source=382ee89a">
+      <p>草莓味儿的波妞： 有人说一看草莓味儿的波妞：草莓味儿的波妞：赵露思就是从小衣草莓味儿的波妞：食无忧的富家千金。 据悉赵露思父亲是一位企业家，身价不菲。 有资源、有人脉，甚至还找到汪涵，把女儿带上综艺节目。所以赵露思演艺道路除了长相圈粉，演技被认可，背后少</p>
     </div>
     <div class="ArticeButton">
       <el-button type="primary" class="AgreeWith" aria-label="赞同">
@@ -55,11 +55,42 @@
 </template>
 
 <style lang="scss">
-  .Card {
-    background: #fff;
-    overflow: hidden;
-    border-radius: 2px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+.Card {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.ThumbnailContainer {
+  padding: 20px;
+  .ArticeTitle {
+    p {
+      line-height: 1.6;
+      font-size: 18px;
+      font-weight: 600;
+      color: #121212;
+      text-align: left;
+    }
   }
+  .ArticeIntroduction {
+    display: flex;
+    img {
+      border-radius: 4px;
+      margin-right: 18px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+      white-space: normal;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      word-break: break-all;
+    }
+  }
+}
 </style>
