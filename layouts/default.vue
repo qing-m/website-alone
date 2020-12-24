@@ -39,7 +39,7 @@ export default {
         },
         {
           name: '聊天室',
-          href: '/workbench'
+          href: '/chat'
         }
       ],
       dataTheme: 'default'
