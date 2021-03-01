@@ -2,7 +2,7 @@
   <div>
     <header class="page-header-container">
       <div class="page-header-inner">
-        <nuxt-link class="logo-link-container" to="/home" tag="div">
+        <nuxt-link class="logo-link-container" to="/home">
           <svg-icon class="icon" icon-class="logo" />
         </nuxt-link>
         <ul role="navigation" class="tabs page-header-tabs">
@@ -11,7 +11,6 @@
             :key="index"
             class="tabs-item page-header-tab"
             role="tab"
-            tag="li"
             :to="item.href"
           >
             <p :class="{'tabs-link': true, 'page-header-tabsLink': true, 'isActive': item.href === fullPath }">
