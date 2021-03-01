@@ -1,22 +1,15 @@
 <template>
   <div id="app" class="app-container" :data-theme="dataTheme">
     <page-header :nav-list="navList" />
-    <page-main>
-      <Nuxt />
-    </page-main>
-    <button @click="handleChangeTheme">
-      Change Theme
-    </button>
+    <Nuxt />
   </div>
 </template>
 
 <script>
 import pageHeader from '@/components/layout/page-header/page-header'
-import pageMain from '@/components/layout/page-main/page-main'
 export default {
   components: {
-    pageHeader,
-    pageMain
+    pageHeader
   },
   data () {
     return {
@@ -24,14 +17,6 @@ export default {
         {
           name: '首页',
           href: '/home'
-        },
-        {
-          name: '沸点',
-          href: '/recommended'
-        },
-        {
-          name: '等你来答',
-          href: '/waiting'
         },
         {
           name: '留言墙',
