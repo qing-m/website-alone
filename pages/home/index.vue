@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-05-26 11:34:02
- * @LastEditTime: 2021-07-09 11:22:01
+ * @LastEditTime: 2021-07-09 13:50:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \website-alone\pages\home\index.vue
@@ -44,7 +44,11 @@ export default {
     ...mapMutations('todo',['setStateTodoIndex']),
     async handleClickIncrement() {
       try {
-        const res = await this.$store.dispatch('todos/register',{email:'809221582',passwode: 'a123456'})
+        const response = await this.$store.dispatch('todos/register',{email:'129221582@qq.com',password: 'a123456'})
+        this.$message({
+          message: response['msg'],
+          type: 'success'
+        })
       } catch (error) {
         return error
       }

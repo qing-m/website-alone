@@ -1,6 +1,7 @@
 import axios from 'axios'
 import qs from 'qs'
 import Config from '@/config'
+import { Message } from 'element-ui';
 
 const config = {
   baseURL: Config.baseURL,
@@ -24,14 +25,22 @@ _axios.interceptors.request.use(
 
 _axios.interceptors.response.use(
   (response) => {
-    debugger
     return response.data
   },
   (error) => {
-    // if(error.response.status == 400) {
-    //   console.log(error.response.data)
-    // }
-    if (error) { throw error.response.data }
+    const errMsg = error.response.data.msg
+    if(errMsg instanceof Array) {
+      Message({
+        message: errMsg[0],
+        type: 'error'
+      })
+    }else {
+      Message({
+        message: errMsg,
+        type: 'error'
+      })
+    }
+    return
   }
 )
 export {
