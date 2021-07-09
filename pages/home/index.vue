@@ -1,9 +1,22 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-05-26 11:34:02
+ * @LastEditTime: 2021-07-09 11:22:01
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \website-alone\pages\home\index.vue
+-->
 <template>
-  <div class="home-container" />
+  <div>
+    <div class="home-container" />
+    <button @click="handleClickIncrement">+</button>
+    {{todoIndex}}
+  </div>
 </template>
 
 <script>
 // import { getUserInfo } from '@/services/api/home'
+ import { mapMutations } from 'vuex'
 export default {
   name: 'HomePage',
   transition: 'search-slide',
@@ -21,6 +34,21 @@ export default {
     return {
       title: 'Home'
     }
+  },
+  computed: {
+    todoIndex() {
+      return this.$store.state.todos.todoIndex
+    }
+  },
+  methods: {
+    ...mapMutations('todo',['setStateTodoIndex']),
+    async handleClickIncrement() {
+      try {
+        const res = await this.$store.dispatch('todos/register',{email:'809221582',passwode: 'a123456'})
+      } catch (error) {
+        return error
+      }
+    },
   }
 }
 </script>

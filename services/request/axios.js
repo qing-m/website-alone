@@ -24,11 +24,14 @@ _axios.interceptors.request.use(
 
 _axios.interceptors.response.use(
   (response) => {
-    const res = response.data
-    return res
+    debugger
+    return response.data
   },
   (error) => {
-    return error
+    // if(error.response.status == 400) {
+    //   console.log(error.response.data)
+    // }
+    if (error) { throw error.response.data }
   }
 )
 export {
