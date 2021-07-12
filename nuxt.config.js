@@ -78,7 +78,7 @@ export default {
       routes.push({
         path: '/',
         redirect: {
-          name: 'home'
+          name: 'register'
         }
       })
     }
