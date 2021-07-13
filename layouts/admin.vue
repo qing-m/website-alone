@@ -11,7 +11,7 @@
 
 <style lang="scss" scoped>
 .adminComponentContainer {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -19,10 +19,10 @@
   align-items: center;
   background: #0E0E0E;
   .adminCardContainer {
-    width: 200px;
-    height: 65%;
-    border-radius: 10px;
-    background: #FEF900;
+    width: 480px;
+    height: 430px;
+    box-shadow: 10px 10px #FFFFFF;
+    border: 1px solid #FFFFFF;
   }
 }
 </style>
