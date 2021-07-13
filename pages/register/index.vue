@@ -5,7 +5,6 @@
       <el-input v-model="email" placeholder="请输入邮箱"></el-input>
       <el-input v-model="password" placeholder="请输入密码"></el-input>
       <el-button @click="handleClickSubmitFromRegister">注册</el-button>
-      TEST
     </div>
   </div>
 </template>
