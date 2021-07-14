@@ -42,6 +42,7 @@ export default {
   box-sizing: border-box;
   padding: 0 40px;
   .title {
+    font-family: Helvetica;
     text-align: center;
     font-size: 36px;
     color: #ffffff;
