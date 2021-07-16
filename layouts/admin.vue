@@ -1,6 +1,9 @@
 <template>
   <div class="adminComponentContainer">
     <div class="adminCardContainer">
+      <div class="ikonContainer">
+        <img src="~/assets/image/admin/admin-ikon.png" alt="">
+      </div>
     </div>
   </div>
 </template>
@@ -18,9 +21,16 @@ export default {
 .adminComponentContainer {
   width: 100%;
   height: 100vh;
-  background: #000000;
   box-sizing: border-box;
-  background: url('~@/assets/image/admin/admin-bg.png') no-repeat center center;
-  background-size: cover;
+  background: #F3F1FE;
+  .ikonContainer {
+    width: 100%;
+    height: 789px;
+    background: #F3F1FE;
+    img {
+      width: 557px;
+      height: 557px;
+    }
+  }
 }
 </style>
