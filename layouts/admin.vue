@@ -20,5 +20,7 @@ export default {
   height: 100vh;
   background: #000000;
   box-sizing: border-box;
+  background: url('~@/assets/image/admin/admin-bg.png') no-repeat center center;
+  background-size: cover;
 }
 </style>
