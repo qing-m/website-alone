@@ -1,11 +1,22 @@
 <template>
-  <div class="loginContainer">
-    <div>
-      <p class="title">登录</p>
-      <div class="loginFrom">
-        <el-input v-model="nickName" placeholder="请输入邮箱"></el-input>
-        <el-input v-model="password" placeholder="请输入密码"></el-input>
-        <el-button @click="handleClickSubmitFromLogin">登录</el-button>
+  <div class="adminContainers">
+    <div class="fromInputs">
+      <el-input 
+        v-model="email" 
+        placeholder="请输入邮箱"
+        prefix-icon="el-icon-message"
+        clearable
+      ></el-input>
+      <el-input 
+        v-model="password" 
+        placeholder="请输入密码"
+        prefix-icon="el-icon-lock"
+        clearable
+        type="password"
+      ></el-input>
+      <div class="submitContainers">
+        <el-button type="primary" @click="handleClickSubmitFromLogin">登录账号注册账号</el-button>
+        <el-button type="text" @click="() => $router.push({name: 'register'})">注册账号</el-button>
       </div>
     </div>
   </div>
@@ -16,7 +27,7 @@ export default {
   layout: 'admin',
   data() {
     return {
-      nickName: '',
+      email: '',
       password: ''
     }
   },
@@ -24,11 +35,10 @@ export default {
     async handleClickSubmitFromLogin() {
       try {
         const requestData = {
-          nickName: this.nickName,
+          email: this.email,
           password: this.password
         }
         const response = await this.$store.dispatch('admin/login',requestData)
-        console.log(response)
       } catch (error) {
         return error
       }
@@ -38,30 +48,78 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.loginContainer {
+.adminContainers {
   width: 100%;
   height: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  > div {
-    width: 100%;
-  }
-  .title {
-    font-family: Helvetica;
-    font-size: 48px;
-    font-weight: 500;
-    color: #FFFFFF;
-    line-height: 53px;
-    margin-bottom: 30px;
-  }
-  .loginFrom {
-    padding: 0 120px;
-    .el-input {
-      display: block;
-      width: 100%;
-      margin-bottom: 30px;
+  overflow: hidden;
+  background: #FFFFFF;
+  .fromInputs {
+    padding: 0 92px;
+    /deep/.el-input {
+      margin-bottom: 35px;
+      .el-input__inner {
+        padding: 31px 95px 31px 90px;
+        font-size: 26px;
+        font-family: Adobe Heiti Std;
+        font-weight: normal;
+        color: #333333;
+        line-height: 15px;
+        border: none;
+        border-bottom: 1px solid #DDDDDD;
+      }
+      .el-input__prefix, .el-input__suffix {
+        width: 33px;
+        height: 100%;
+        padding: 5px 0;
+        margin-left: 27px;
+        .el-input__icon {
+          display: inline;
+          font-size: 33px;
+          color: #717171;
+        }
+      }
+      .el-input__suffix {
+        margin-left: 0;
+        margin-right: 27px;
+      }
+      .el-input__inner:focus {
+        border-bottom: 1px solid #0058E4;
+        color: #0058E4;
+      }
+      .el-input__inner:focus+.el-input__prefix {
+        .el-input__icon {
+          color: #0058E4;
+        }
+      }
+    }
+    .submitContainers {
+      margin-top: 70px;
+      /deep/.el-button {
+        display: block;
+        margin: 0;
+        &.el-button--primary {
+          font-size: 26px;
+          font-family: Adobe Heiti Std;
+          font-weight: normal;
+          line-height: 15px;
+          width: 100%;
+          height: 80px;
+          background: linear-gradient(90deg, #0058E4 0%, #008BFF 100%);
+          border-radius: 40px;
+        }
+        &.el-button--text {
+          width: 100%;
+          text-align: center;
+          font-size: 26px;
+          font-family: Adobe Heiti Std;
+          font-weight: normal;
+          color: #0058E4;
+          line-height: 15px;
+        }
+      }
+      /deep/.el-button:first-child {
+        margin-bottom: 28px;
+      }
     }
   }
 }
