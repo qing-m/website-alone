@@ -30,15 +30,9 @@ _axios.interceptors.response.use(
   (error) => {
     const errMsg = error.response.data.msg
     if(errMsg instanceof Array) {
-      Message({
-        message: errMsg[0],
-        type: 'error'
-      })
+      alert(errMsg[0])
     }else {
-      Message({
-        message: errMsg,
-        type: 'error'
-      })
+      alert(errMsg)
     }
     return
   }

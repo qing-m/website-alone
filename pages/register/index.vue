@@ -47,6 +47,7 @@ export default {
           password: this.password
         }
         const response = await this.$store.dispatch('admin/register',requestData)
+        alert('注册成功')
         this.$router.push({name: 'login'})
       } catch (error) {
         return error
@@ -111,6 +112,11 @@ export default {
           height: 80px;
           background: linear-gradient(90deg, #0058E4 0%, #008BFF 100%);
           border-radius: 40px;
+          font-size: 26px;
+          font-family: Adobe Heiti Std;
+          font-weight: normal;
+          line-height: 15px;
+          color: #FFFFFF;
         }
         &.el-button--text {
           width: 100%;

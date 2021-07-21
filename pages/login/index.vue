@@ -15,7 +15,7 @@
         type="password"
       ></el-input>
       <div class="submitContainers">
-        <el-button type="primary" @click="handleClickSubmitFromLogin">登录账号注册账号</el-button>
+        <el-button type="primary" @click="handleClickSubmitFromLogin">登录账号</el-button>
         <el-button type="text" @click="() => $router.push({name: 'register'})">注册账号</el-button>
       </div>
     </div>
@@ -39,6 +39,8 @@ export default {
           password: this.password
         }
         const response = await this.$store.dispatch('admin/login',requestData)
+        console.log(response)
+        this.$router.push({name: 'home'})
       } catch (error) {
         return error
       }
