@@ -1,7 +1,6 @@
 import axios from 'axios'
 import qs from 'qs'
 import Config from '@/config'
-import { Message } from 'element-ui';
 
 const config = {
   baseURL: Config.baseURL,

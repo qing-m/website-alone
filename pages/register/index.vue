@@ -1,28 +1,25 @@
 <template>
   <div class="adminContainers">
     <div class="fromInputs">
-      <el-input 
+      <van-field
         v-model="nickName" 
         placeholder="请输入用户名"
-        prefix-icon="el-icon-user"
         clearable
-      ></el-input>
-      <el-input 
+      ></van-field>
+      <van-field  
         v-model="email" 
         placeholder="请输入邮箱"
-        prefix-icon="el-icon-message"
         clearable
-      ></el-input>
-      <el-input 
+      ></van-field>
+      <van-field
         v-model="password" 
         placeholder="请输入密码"
-        prefix-icon="el-icon-lock"
         clearable
         type="password"
-      ></el-input>
+      ></van-field>
       <div class="submitContainers">
-        <el-button type="primary" @click="handleClickSubmitFromRegister">注册账号</el-button>
-        <el-button type="text" @click="() => $router.push({name: 'login'})">登录账号</el-button>
+        <van-button type="info" @click="handleClickSubmitFromRegister">注册账号</van-button>
+        <van-button plain type="default" @click="() => $router.push({name: 'login'})">登录账号</van-button>
       </div>
     </div>
   </div>
@@ -65,49 +62,12 @@ export default {
   background: #FFFFFF;
   .fromInputs {
     padding: 0 92px;
-    /deep/.el-input {
-      margin-bottom: 35px;
-      .el-input__inner {
-        padding: 31px 95px 31px 90px;
-        font-size: 26px;
-        font-family: Adobe Heiti Std;
-        font-weight: normal;
-        color: #333333;
-        line-height: 15px;
-        border: none;
-        border-bottom: 1px solid #DDDDDD;
-      }
-      .el-input__prefix, .el-input__suffix {
-        width: 33px;
-        height: 100%;
-        padding: 5px 0;
-        margin-left: 27px;
-        .el-input__icon {
-          display: inline;
-          font-size: 33px;
-          color: #717171;
-        }
-      }
-      .el-input__suffix {
-        margin-left: 0;
-        margin-right: 27px;
-      }
-      .el-input__inner:focus {
-        border-bottom: 1px solid #0058E4;
-        color: #0058E4;
-      }
-      .el-input__inner:focus+.el-input__prefix {
-        .el-input__icon {
-          color: #0058E4;
-        }
-      }
-    }
     .submitContainers {
       margin-top: 70px;
-      /deep/.el-button {
+      /deep/.van-button {
         display: block;
         margin: 0;
-        &.el-button--primary {
+        &.van-button--info {
           width: 100%;
           height: 80px;
           background: linear-gradient(90deg, #0058E4 0%, #008BFF 100%);
@@ -118,17 +78,18 @@ export default {
           line-height: 15px;
           color: #FFFFFF;
         }
-        &.el-button--text {
+        &.van-button--default { 
           width: 100%;
-          text-align: center;
+          height: 80px;
+          border-radius: 40px;
           font-size: 26px;
           font-family: Adobe Heiti Std;
           font-weight: normal;
-          color: #0058E4;
           line-height: 15px;
+          color: #333333;
         }
       }
-      /deep/.el-button:first-child {
+      /deep/.van-button:first-child {
         margin-bottom: 28px;
       }
     }

@@ -15,12 +15,7 @@
 </template>
 
 <script>
-import NeonText from '@/components/textComponent/neonText'
-export default {
-  components: {
-    NeonText
-  },
-}
+
 </script>
 
 <style lang="scss" scoped>
