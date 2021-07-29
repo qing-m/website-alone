@@ -1,6 +1,7 @@
 import axios from 'axios'
 import qs from 'qs'
 import Config from '@/config'
+import { Notify } from 'vant';
 
 const config = {
   baseURL: Config.baseURL,
@@ -27,13 +28,26 @@ _axios.interceptors.response.use(
     return response.data
   },
   (error) => {
+    if(error.response ==  null) {
+      Notify({
+        type: 'danger',
+        message: '服务器链接超时'
+      })
+      throw error
+    }
     const errMsg = error.response.data.msg
     if(errMsg instanceof Array) {
-      alert(errMsg[0])
+      Notify({
+        type: 'danger',
+        message: errMsg[0]
+      })
     }else {
-      alert(errMsg)
+      Notify({
+        type: 'danger',
+        message: errMsg
+      })
     }
-    return
+    throw error
   }
 )
 export {

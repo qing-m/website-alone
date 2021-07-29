@@ -20,7 +20,6 @@ export default {
 <style lang="scss">
 .neonTextContainer {
   .neon {
-    font-family: 'Helvetica';
     text-transform: uppercase;
     cursor: default;
     color: #FFFFFF;

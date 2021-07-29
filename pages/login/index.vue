@@ -39,7 +39,10 @@ export default {
           password: this.password
         }
         const response = await this.$store.dispatch('admin/login',requestData)
-        console.log(response)
+        this.$notify({
+          message: '登陆成功',
+          type: 'success'
+        });
         this.$router.push({name: 'home'})
       } catch (error) {
         return error
@@ -56,36 +59,36 @@ export default {
   overflow: hidden;
   background: #FFFFFF;
   .fromInputs {
-    padding: 0 92px;
+    padding: 0 46px;
     .submitContainers {
-      margin-top: 70px;
+      margin-top: 35px;
       /deep/.van-button {
         display: block;
         margin: 0;
         &.van-button--info {
           width: 100%;
-          height: 80px;
+          height: 40px;
           background: linear-gradient(90deg, #0058E4 0%, #008BFF 100%);
-          border-radius: 40px;
-          font-size: 26px;
+          border-radius: 20px;
+          font-size: 13px;
           font-family: Adobe Heiti Std;
           font-weight: normal;
-          line-height: 15px;
+          line-height: 8px;
           color: #FFFFFF;
         }
         &.van-button--default { 
           width: 100%;
-          height: 80px;
-          border-radius: 40px;
-          font-size: 26px;
+          height: 40px;
+          border-radius: 20px;
+          font-size: 13px;
           font-family: Adobe Heiti Std;
           font-weight: normal;
-          line-height: 15px;
+          line-height: 8px;
           color: #333333;
         }
       }
       /deep/.van-button:first-child {
-        margin-bottom: 28px;
+        margin-bottom: 14px;
       }
     }
   }

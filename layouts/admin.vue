@@ -26,7 +26,7 @@
   background: #FFFFFF;
   .ikonContainer {
     width: 100%;
-    height: 752px;
+    height: 376px;
     background: #FFFFFF;
     display: flex;
     align-items: center;
@@ -38,26 +38,26 @@
       border-radius: 50%;
     }
     .adorn-one {
-      width: 270px;
-      height: 270px;
-      top: -80px;
-      left: -100px;
+      width: 135px;
+      height: 135px;
+      top: -40px;
+      left: -50px;
     }
     .adorn-two {
-      width: 240px;
-      height: 240px;
-      top: 63px;
-      right: -175px;
+      width: 120px;
+      height: 120px;
+      top: 32px;
+      right: -88px;
     }
     .adorn-three {
-      width: 138px;
-      height: 138px;
-      bottom: 99px;
-      left: 164px;
+      width: 69px;
+      height: 69px;
+      bottom: 50px;
+      left: 82px;
     }
     img {
-      width: 439px;
-      height: 390px;
+      width: 220px;
+      height: 195px;
     }
   }
 }
