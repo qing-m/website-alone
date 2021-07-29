@@ -28,6 +28,7 @@ export default {
   plugins: [
     '~/plugins/axios',
     '~/plugins/vantUI',
+    {src: '@/plugins/nprogress', ssr: false},
     { src: '@/plugins/icons', ssr: true }
   ],
 
@@ -98,12 +99,11 @@ export default {
   },
 
   router: {
-    middleware: 'theme',
     extendRoutes (routes, reslove) {
       routes.push({
         path: '/',
         redirect: {
-          name: 'register'
+          name: 'home'
         }
       })
     }

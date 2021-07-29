@@ -62,6 +62,8 @@ img {
 input, textarea {
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
+  outline: none;
+  border: none;
 }
 
 ::-webkit-scrollbar {
