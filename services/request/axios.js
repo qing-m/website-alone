@@ -2,6 +2,7 @@ import axios from 'axios'
 import qs from 'qs'
 import Config from '@/config'
 import { Notify } from 'vant';
+import { getToken } from '@/utils/auth'
 
 const config = {
   baseURL: Config.baseURL,
@@ -12,6 +13,9 @@ const _axios = axios.create(config)
 
 _axios.interceptors.request.use(
   (config) => {
+    if(getToken()) {
+      config.headers['token'] = getToken()
+    }
     if (config.method === 'get') {
       config.params = qs.parse(qs.stringify(config.params))
     }

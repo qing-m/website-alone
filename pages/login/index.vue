@@ -52,7 +52,7 @@ export default {
           email: this.email,
           password: this.password
         }
-        const response = await this.$store.dispatch('admin/login',requestData)
+        await this.$store.dispatch('admin/login',requestData)
         this.$notify({
           message: '登陆成功',
           type: 'success'

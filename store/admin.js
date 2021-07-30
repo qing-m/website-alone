@@ -2,9 +2,10 @@ import {
   register,
   login
 } from '@/services/api/admin'
+import { getToken, setToken } from '@/utils/auth'
 
 export const state = () => ({
-  token: null
+  token: getToken()
 })
 
 export const getters = () => ({
@@ -12,7 +13,9 @@ export const getters = () => ({
 })
 
 export const mutations = {
-
+  setToken(state, value) {
+    state.token = value
+  }
 }
 
 export const actions = {
@@ -28,7 +31,8 @@ export const actions = {
   async login({commit,dispatch}, data) {
     try {
       const response = await login(data)
-      console.log(response)
+      commit('setToken', response.data.token)
+      setToken(response.data.token)
       return response
     } catch (error) {
       if(error) throw new Error(error)
