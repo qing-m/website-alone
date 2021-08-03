@@ -1,11 +1,16 @@
 <template>
   <div id="app" class="app-container" :data-theme="dataTheme">
+    <defaultNavBar/>
     <Nuxt />
   </div>
 </template>
 
 <script>
+import defaultNavBar from '@/components/defaultNavBar'
 export default {
+  components: {
+    defaultNavBar
+  },
   data () {
     return {
       dataTheme: 'default'
