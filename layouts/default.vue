@@ -21,7 +21,9 @@ export default {
 
 <style lang="scss" scoped>
 .app-container {
-  background-color: #f6f6f6;
+  width: 100%;
+  height: 100vh;
+  background-color: #FFFFFF;
   position: relative;
 }
 </style>
