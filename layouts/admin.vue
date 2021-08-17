@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-07-13 11:43:17
+ * @LastEditTime: 2021-08-17 15:17:45
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \website-alone\layouts\admin.vue
+-->
 <template>
   <div class="adminComponentContainer">
     <div class="adminCardContainer">
@@ -15,7 +23,9 @@
 </template>
 
 <script>
-
+export default {
+  
+}
 </script>
 
 <style lang="scss" scoped>
