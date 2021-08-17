@@ -1,20 +1,25 @@
-# website-alone
+<!-- 使用 npx readme-md-generator 更改姿势样式 -->
+# Welcome to 肥宅社区 👋
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 
-## Build Setup
+> 一个用于聊天交友的社区，你也可以在上面看一些文章和发布一些文章
 
-```bash
-# install dependencies
-$ yarn install
+## Install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```sh
+npm install
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Usage
+
+```sh
+npm run start
+```
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
