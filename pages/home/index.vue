@@ -1,7 +1,7 @@
 <template>
   <div class="homeContainer">
     homeContainer
-    <button @click="handleRegister">111111</button>
+    <button @click="handleRegister">111</button>
   </div>
 </template>
 
