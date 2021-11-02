@@ -1,7 +1,10 @@
+<!--
+ * @Author: 王鹤垚
+ * @LastEditors: 王鹤垚
+-->
 <template>
   <div class="homeContainer">
-    homeContainer
-    <button @click="handleRegister">111</button>
+
   </div>
 </template>
 
