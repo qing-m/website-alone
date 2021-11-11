@@ -1,3 +1,7 @@
+<!--
+ * @Author: 王鹤垚
+ * @LastEditors: 王鹤垚
+-->
 <template>
   <div class="defaultNavBar">
     <div class="container">
@@ -18,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .defaultNavBar {
   width: 100%;
-  height: 44px;
+  height: 64px;
   box-sizing: border-box;
   background-image: linear-gradient(90deg,#51CBFC, #47A7FE);
   position: relative;
@@ -41,6 +45,24 @@ export default {
       p {
         font-size: 16px;
         color: #FFFFFF;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .defaultNavBar {
+    height: 32PX;
+    .container {
+      .user-avatar-name {
+        img {
+          width: 20PX;
+          height: 20PX;
+          margin-right: 5PX;
+        }
+        p {
+          font-size: 16PX;
+          color: #FFFFFF;
+        }
       }
     }
   }
