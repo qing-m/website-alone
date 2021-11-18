@@ -9,7 +9,7 @@
           placeholder="请输入邮箱"
           prefix-icon="el-icon-message"
           clearable
-          maxlength='20'
+          maxlength='30'
           @focus="inputFocus"
           @blur="inputBlur"
         ></input>
