@@ -4,13 +4,21 @@
 -->
 <template>
   <div class="navbar-container">
-    
+    <Avatar :avatarURL="this.avatar" />
   </div>
 </template>
 
 <script>
+import Avatar from '@/components/avatar/index.vue'
 export default {
-  
+  components: {
+    Avatar,
+  },
+  data() {
+    return {
+      avatar: ''
+    }
+  },
 }
 </script>
 
@@ -20,5 +28,6 @@ export default {
   height: 100%;
   background: #fcee09;
   display: inline-block;
+  padding: 10px 0 10px 0;
 }
 </style>
