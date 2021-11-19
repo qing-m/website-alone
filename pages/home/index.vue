@@ -14,6 +14,9 @@ export default {
   asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
     console.log(store.state.admin.token)
   },
+  head: {
+    title: '琦玉'
+  },
   methods: {
     handleRegister() {
       console.log(this.$store.state)

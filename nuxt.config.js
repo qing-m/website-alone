@@ -2,8 +2,8 @@ import path from 'path'
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: '元气肥宅妙妙屋 | Alone',
-    titleTemplate: '%s | Alone',
+    title: 'Z市',
+    titleTemplate: '%s | Z市',
     meta: [
       { charset: 'utf-8' },
       { 'http-equiv': 'cleartype', content: 'on' },
