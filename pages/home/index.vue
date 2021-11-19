@@ -26,9 +26,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.homeContainer {
-  width: 100%;
-  height: 100%;
-  background: #F6F6F6;
-}
+
 </style>

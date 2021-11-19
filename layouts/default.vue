@@ -1,15 +1,15 @@
 <template>
   <div id="app" class="app-container" :data-theme="dataTheme">
-    <defaultNavBar/>
+    <NavBar />
     <Nuxt />
   </div>
 </template>
 
 <script>
-import defaultNavBar from '@/components/defaultNavBar'
+import NavBar from '@/components/navBar'
 export default {
   components: {
-    defaultNavBar
+    NavBar
   },
   data () {
     return {
@@ -28,7 +28,8 @@ export default {
 .app-container {
   width: 100%;
   height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #000000;
   position: relative;
+  overflow: hidden;
 }
 </style>
