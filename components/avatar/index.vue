@@ -3,7 +3,7 @@
  * @LastEditors: 王鹤垚
 -->
 <template>
-  <div class="avatar-container">
+  <div class="avatar-container" @click="handleClickAvatarSubmit">
     <img v-if="isAvatar" class="avatar-img" src="" alt="">
     <div v-else class="default-avatar">
       <p class="text">请登录</p>
@@ -25,6 +25,11 @@ export default {
         return true
       }
       return false
+    }
+  },
+  methods: {
+    handleClickAvatarSubmit() {
+      this.$emit('handleClickAvatarSubmit')
     }
   }
 }

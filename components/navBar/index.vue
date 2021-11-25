@@ -4,7 +4,10 @@
 -->
 <template>
   <div class="navbar-container">
-    <Avatar :avatarURL="this.avatar" />
+    <Avatar
+      :avatarURL="this.avatar"
+      @handleClickAvatarSubmit='handleClickAvatarSubmit'
+    />
   </div>
 </template>
 
@@ -19,6 +22,11 @@ export default {
       avatar: ''
     }
   },
+  methods: {
+    handleClickAvatarSubmit() {
+      console.log('点击头像')
+    }
+  }
 }
 </script>
 
