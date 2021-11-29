@@ -4,7 +4,7 @@
 -->
 <template>
   <div class="homeContainer">
-
+    联系人列表
   </div>
 </template>
 

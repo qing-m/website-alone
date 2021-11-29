@@ -34,7 +34,7 @@ export default {
 .navbar-container {
   width: 88px;
   height: 100%;
-  background: #fcee09;
+  background: #2e2e2e;
   display: inline-block;
   padding: 10px 0 10px 0;
 }

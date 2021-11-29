@@ -1,3 +1,7 @@
+<!--
+ * @Author: 王鹤垚
+ * @LastEditors: 王鹤垚
+-->
 <template>
   <div id="app" class="app-container" :data-theme="dataTheme">
     <NavBar />
@@ -29,8 +33,9 @@ export default {
   width: 100%;
   height: 100vh;
   margin: 0 auto;
-  background-color: #000000;
+  background-color: #f5f5f5;
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 </style>

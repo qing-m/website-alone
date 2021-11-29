@@ -5,9 +5,9 @@
 <template>
   <div class="avatar-container" @click="handleClickAvatarSubmit">
     <img v-if="isAvatar" class="avatar-img" src="" alt="">
-    <div v-else class="default-avatar">
+    <!-- <div v-else class="default-avatar">
       <p class="text">请登录</p>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -39,17 +39,14 @@ export default {
 .avatar-container {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   margin: 0 auto;
   .avatar-img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
   }
   .default-avatar {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
     background: #000000;
     display: flex;
     align-items: center;
