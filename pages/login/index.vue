@@ -1,3 +1,7 @@
+<!--
+ * @Author: 王鹤垚
+ * @LastEditors: 王鹤垚
+-->
 <template>
   <div class="adminContainers">
     <div class="fromInputs">
@@ -29,8 +33,19 @@
         ></input>
       </label>
       <div class="submitContainers">
-        <van-button type="info" @click="handleClickSubmitFromLogin">登录账号</van-button>
-        <p class="bottomBtn" @click="() => $router.push({name: 'register'})">注册账号</p>
+        <van-button 
+          class="admin-btn topBtn"
+          color="linear-gradient(to right, #0058E4, #008BFF)"
+          block 
+          @click="handleClickSubmitFromLogin"
+        >登录账号</van-button>
+        <van-button 
+          class="admin-btn bottomBtn" 
+          block
+          color="#0058E4"
+          plain
+          @click="() => $router.push({name: 'register'})"
+        >注册账号</van-button>
       </div>
     </div>
   </div>
@@ -73,77 +88,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.adminContainers {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #FFFFFF;
-  .fromInputs {
-    padding: 0 46px;
-    .inputContainer {
-      position: relative;
-      display: flex;
-      align-items: center;
-      .beforeIcon {
-        font-size: 18px;
-        position: absolute;
-        left: 14px;
-      }
-      .inputItem {
-        width: 100%;
-        height: 43px;
-        box-sizing: border-box;
-        border-bottom: 1px solid #DDDDDD;
-        padding: 18px 47px;
-        font-size: 13px;
-        font-family: Adobe Heiti Std;
-        font-weight: normal;
-        color: #333333;
-        line-height: 8px;
-      }
-      .inputItem:focus {
-        color: #0058E4;
-        border-color: #0058E4;
-      }
-    }
-    .currentFocusContainer {
-      .beforeIcon {
-        color: #0058E4;
-      }
-    }
-    .submitContainers {
-      margin-top: 35px;
-      /deep/.van-button {
-        display: block;
-        margin: 0;
-        &.van-button--info {
-          width: 100%;
-          height: 40px;
-          background: linear-gradient(90deg, #0058E4 0%, #008BFF 100%);
-          border-radius: 20px;
-          font-size: 13px;
-          font-family: Adobe Heiti Std;
-          font-weight: normal;
-          line-height: 8px;
-          color: #FFFFFF;
-        }
-      }
-      .bottomBtn { 
-        width: 100%;
-        height: 40px;
-        font-size: 13px;
-        font-family: Adobe Heiti Std;
-        font-weight: normal;
-        line-height: 8px;
-        color: #333333;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      /deep/.van-button:first-child {
-        margin-bottom: 14px;
-      }
-    }
+.submitContainers {
+  margin-top: 102px;
+  /deep/.admin-btn {
+    margin-bottom: 28px;
+    height: 80px;
+    font-size: 28px;
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 15px;
   }
 }
 </style>

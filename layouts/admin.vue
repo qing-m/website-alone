@@ -1,30 +1,31 @@
 <!--
  * @Author: your name
  * @Date: 2021-07-13 11:43:17
- * @LastEditTime: 2021-08-17 15:17:45
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-12-01 17:17:29
+ * @LastEditors: 王鹤垚
  * @Description: In User Settings Edit
  * @FilePath: \website-alone\layouts\admin.vue
 -->
 <template>
   <div class="adminComponentContainer">
+    <h3 class="title">{{routerName}}</h3>
     <div class="adminCardContainer">
-      <div class="ikonContainer">
-        <img src="~/assets/image/admin/admin-ikon.png" alt="">
-        <div class="adorn adorn-one"></div>
-        <div class="adorn adorn-two"></div>
-        <div class="adorn adorn-three"></div>
-      </div>
-      <div>
-        <Nuxt />
-      </div>
+      <Nuxt />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  
+  computed: {
+    routerName() {
+      const name = {
+        register: 'Sign Up',
+        login: 'Sign In'
+      }
+      return name[this.$route.name]
+    }
+  }
 }
 </script>
 
@@ -33,41 +34,54 @@ export default {
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
+  overflow: hidden;
   background: #FFFFFF;
-  .ikonContainer {
+  padding-top: 156px;
+  .title {
+    font-size: 56px;
+    text-align: center;
+    color: #333333;
+  }
+  .adminCardContainer {
+    box-sizing: border-box;
     width: 100%;
-    height: 376px;
-    background: #FFFFFF;
+    padding: 0 92px;
+    margin-top: 200px;
+  }
+}
+</style>
+
+<style lang="scss">
+.fromInputs {
+  .inputContainer {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    .adorn {
+    .beforeIcon {
+      font-size: 33px;
       position: absolute;
-      background: #E5F7FF;
-      border-radius: 50%;
+      left: 35px;
     }
-    .adorn-one {
-      width: 135px;
-      height: 135px;
-      top: -40px;
-      left: -50px;
+    .inputItem {
+      width: 100%;
+      height: 86px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #DDDDDD;
+      border-radius: 0;
+      padding: 35px 105px;
+      font-size: 26px;
+      font-weight: normal;
+      color: #333333;
+      line-height: 15px;
     }
-    .adorn-two {
-      width: 120px;
-      height: 120px;
-      top: 32px;
-      right: -88px;
+    .inputItem:focus {
+      color: #0058E4;
+      border-color: #0058E4;
     }
-    .adorn-three {
-      width: 69px;
-      height: 69px;
-      bottom: 50px;
-      left: 82px;
-    }
-    img {
-      width: 220px;
-      height: 195px;
+  }
+  .currentFocusContainer {
+    .beforeIcon {
+      color: #0058E4;
     }
   }
 }
