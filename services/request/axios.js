@@ -1,3 +1,7 @@
+/*
+ * @Author: 王鹤垚
+ * @LastEditors: 王鹤垚
+ */
 import axios from 'axios'
 import qs from 'qs'
 import Config from '@/config'
@@ -19,7 +23,6 @@ _axios.interceptors.request.use(
     if (config.method === 'get') {
       config.params = qs.parse(qs.stringify(config.params))
     }
-
     return config
   },
   (error) => {

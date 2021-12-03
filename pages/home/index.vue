@@ -12,7 +12,7 @@
 export default {
   layout: 'default',
   asyncData({isDev, route, store, env, params, query, req, res, redirect, error}) {
-    console.log(store.state.admin.token)
+    console.log(store.state.admin.userId)
   },
   head: {
     title: '琦玉'
