@@ -10,6 +10,7 @@
 
 <script>
 export default {
+  middleware: ['userAuth'],
   data () {
     return {
       dataTheme: 'default'

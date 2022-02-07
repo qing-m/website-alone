@@ -42,7 +42,6 @@ export const actions = {
       const response = await login(data)
       commit('setToken', response.data.token)
       setToken(response.data.token)
-      setUserId(response.data.author.id)
       return response
     } catch (error) {
       if(error) throw new Error(error)

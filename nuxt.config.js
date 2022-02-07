@@ -99,7 +99,6 @@ export default {
   },
 
   router: {
-    middleware: ['userAuth'],
     extendRoutes (routes, reslove) {
       routes.push({
         path: '/',

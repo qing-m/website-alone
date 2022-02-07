@@ -1,3 +1,7 @@
+/*
+ * @Author: 王鹤垚
+ * @LastEditors: 王鹤垚
+ */
 import Cookies from 'js-cookie'
 
 const TokenKey = 'X-Alone-Token'
